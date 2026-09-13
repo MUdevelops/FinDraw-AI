@@ -8,9 +8,6 @@
 
 </div>
 
-<br>
-
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=2800&pause=900&color=7C3AED&center=true&vCenter=true&width=750&lines=Draw+Naturally.+Recognize+Intelligently.;Freehand+Drawing+%E2%86%92+AI+Shape+Recognition;Turn+Rough+Sketches+Into+Clean+Diagrams;Built+with+Python+%7C+Tkinter+%7C+AI" alt="Typing Animation"/>
 
 <br><br>
 
