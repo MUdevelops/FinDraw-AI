@@ -1,326 +1,444 @@
 <div align="center">
 
-# 🎨 FinDrawAI
-
-### AI-Powered Intelligent Whiteboard
-
-**Draw naturally. Let AI understand your sketch. Transform rough ideas into clean, structured diagrams.**
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20,24,30&height=180&section=header&text=FinDrawAI&fontSize=55&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=AI-Powered%20Intelligent%20Drawing%20%26%20Shape%20Recognition&descAlignY=58&descSize=18" width="100%"/>
 
 <br>
 
-[![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge\&logo=python\&logoColor=white)](https://www.python.org/)
-[![Tkinter](https://img.shields.io/badge/UI-Tkinter-FF6F00?style=for-the-badge)](https://docs.python.org/3/library/tkinter.html)
-[![AI](https://img.shields.io/badge/AI-Computer%20Vision-8B5CF6?style=for-the-badge)](#-ai-engines)
-[![Claude](https://img.shields.io/badge/Cloud-Claude-D97706?style=for-the-badge)](https://www.anthropic.com/)
-[![License](https://img.shields.io/badge/License-MIT-22C55E?style=for-the-badge)](LICENSE)
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=2800&pause=900&color=7C3AED&center=true&vCenter=true&width=750&lines=Draw+Naturally.+Recognize+Intelligently.;Freehand+Drawing+%E2%86%92+AI+Shape+Recognition;Turn+Rough+Sketches+Into+Clean+Diagrams;Built+with+Python+%7C+Tkinter+%7C+AI" alt="Typing Animation"/>
+
+<br><br>
+
+<a href="https://github.com/MUdevelops/FinDraw-AI">
+<img src="https://img.shields.io/badge/GitHub-MUdevelops%2FFinDraw--AI-181717?style=for-the-badge&logo=github&logoColor=white"/>
+</a>
+
+<img src="https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
+<img src="https://img.shields.io/badge/Tkinter-Desktop%20GUI-FF6F00?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/AI-Shape%20Recognition-8B5CF6?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/License-MIT-22C55E?style=for-the-badge"/>
+
+<br><br>
+
+### 🎨 Draw. Detect. Understand.
+
+**FinDrawAI is an intelligent desktop whiteboard that recognizes hand-drawn geometric shapes and transforms rough sketches into structured visual elements.**
 
 <br>
 
-**A lightweight desktop whiteboard designed for developers, students, designers, architects, and anyone who thinks visually.**
+<a href="#-features">Features</a> • <a href="#-screenshots">Screenshots</a> • <a href="#-installation">Installation</a> • <a href="#-usage">Usage</a> • <a href="#-architecture">Architecture</a>
 
 </div>
 
 ---
 
-## ✨ Overview
+## 🧠 What is FinDrawAI?
 
-**FinDrawAI** is an intelligent desktop whiteboard that allows you to sketch diagrams, flowcharts, system architectures, wireframes, and ideas naturally.
+**FinDrawAI** is a Python-based intelligent drawing application designed to bridge the gap between **freehand sketching** and **structured digital diagrams**.
 
-Instead of manually recreating your rough drawing, FinDrawAI can **recognize the drawing, understand its structure, and generate a cleaner representation**.
+Instead of forcing users to manually create perfect shapes, FinDrawAI allows them to simply draw.
 
-The application provides two recognition engines:
+The application analyzes the drawing and can recognize geometric forms such as:
 
-* 🆓 **Free Local Engine** — completely offline, free, and requires no API key.
-* ☁️ **Cloud Claude Engine** — optional AI-powered recognition for more complex and messy sketches.
+* 🔵 Circles
+* ▭ Rectangles
+* ⬡ Heptagons
+* ✏️ Custom freehand drawings
+* 🔷 Other geometric structures
 
-This makes FinDrawAI useful both as a **zero-configuration offline tool** and as an **AI-enhanced diagramming application**.
+The result is a more accurate and organized representation of the user's original sketch.
 
 ---
 
-## 🚀 Why FinDrawAI?
-
-Traditional diagramming tools often require users to manually create every shape and connection.
-
-FinDrawAI takes a different approach:
+## ✨ Core Concept
 
 ```text
-        ✏️ Your Rough Sketch
-                 │
-                 ▼
-        ┌─────────────────┐
-        │   FinDrawAI     │
-        │  AI Recognition │
-        └────────┬────────┘
-                 │
-        ┌────────┴────────┐
-        ▼                 ▼
-   🆓 Local Engine   ☁️ Claude AI
-        │                 │
-        └────────┬────────┘
-                 ▼
-       🧠 Structured Result
-                 │
-                 ▼
-        ✨ Clean Diagram
-                 │
-          ┌──────┴──────┐
-          ▼             ▼
-        PNG            JSON
+              ✏️ USER DRAWING
+                    │
+                    ▼
+          ┌───────────────────┐
+          │   FinDrawAI       │
+          │   Drawing Canvas  │
+          └─────────┬─────────┘
+                    │
+                    ▼
+             🔍 ANALYSIS
+                    │
+                    ▼
+          ┌───────────────────┐
+          │ Shape Detection   │
+          │ & Recognition     │
+          └─────────┬─────────┘
+                    │
+                    ▼
+             🧠 AI / Logic
+                    │
+                    ▼
+          ┌───────────────────┐
+          │ Structured Shape  │
+          │ / Clean Drawing   │
+          └───────────────────┘
 ```
 
----
-
-# 🌟 Features
-
-## 🎨 Powerful Drawing Tools
-
-Create diagrams directly on the interactive canvas.
-
-* ✏️ Freehand Pen
-* ▭ Rectangle
-* ⚪ Circle / Ellipse
-* 🔺 Triangle
-* ◆ Diamond
-* ⭐ Star
-* ⬡ Polygon shapes
-* ➖ Line
-* ➡️ Arrow
-* 🔤 Text
-* 🖱️ Select / Move
-* 🧹 Eraser
+> **Your hand doesn't have to be perfect. FinDrawAI does the understanding.**
 
 ---
 
-## 🤖 Dual AI Recognition
+# 🚀 Features
 
-FinDrawAI supports two recognition modes.
+<div align="center">
 
-### 🆓 Free Local Mode
+|    🎨 Drawing    |   🧠 Recognition   |       ⚡ Accuracy      |
+| :--------------: | :----------------: | :-------------------: |
+| Freehand Drawing |   Shape Detection  |   Accurate Geometry   |
+|   Custom Shapes  | Circle Recognition | Rectangle Recognition |
+|  Multiple Tools  |  Polygon Detection |    Clean Rendering    |
 
-The default engine requires:
-
-* ❌ No API key
-* ❌ No internet connection
-* ❌ No cloud service
-* ❌ No subscription
-* ✅ Completely free
-* ✅ Instant recognition
-
-The local engine uses **geometry-based recognition** rather than a neural network.
-
-It analyzes characteristics such as:
-
-* Stroke paths
-* Corners
-* Shape closure
-* Roundness
-* Polygon structure
-* Proximity between objects
-* Text placement
-* Connections between shapes
-
-This makes the local engine particularly useful for clean diagrams, flowcharts, wireframes, and basic shapes.
+</div>
 
 ---
 
-### ☁️ Cloud Claude Mode
+## 🎨 Freehand Drawing
 
-For more complicated or messy sketches, FinDrawAI can optionally use the **Claude API**.
+FinDrawAI provides a flexible drawing canvas where users can freely sketch their ideas.
 
-Cloud mode can provide more flexible recognition for:
+You can create:
 
-* Messy sketches
-* Complex diagrams
-* System architecture
-* Mixed visual elements
-* Flowcharts
-* Hand-drawn concepts
+* Freehand shapes
+* Rough diagrams
+* Custom drawings
+* Geometric sketches
+* Experimental designs
 
-Cloud mode requires your own:
-
-```env
-ANTHROPIC_API_KEY=your_api_key
-```
-
-Your API key is never included in the project.
+The application doesn't force you to create mathematically perfect shapes.
 
 ---
 
-# 🧠 AI Recognition Pipeline
+## 🧠 Intelligent Shape Detection
 
-FinDrawAI transforms a rough drawing into structured information.
+One of FinDrawAI's primary capabilities is detecting shapes from user drawings.
+
+For example:
 
 ```text
-Drawing
-   │
-   ▼
-Canvas Capture
-   │
-   ▼
-Recognition Engine
-   │
-   ├───────────────┐
-   ▼               ▼
-Local Engine    Claude API
-   │               │
-   └───────┬───────┘
-           ▼
-    Structured JSON
-           │
-           ▼
-      AI Analysis
-           │
-           ▼
-    Cleaned Diagram
+        Rough Drawing
+             │
+             ▼
+      ┌─────────────┐
+      │ Shape Input │
+      └──────┬──────┘
+             │
+             ▼
+       Shape Analysis
+             │
+      ┌──────┼──────┐
+      ▼      ▼      ▼
+    Circle Rectangle Polygon
+      │      │      │
+      └──────┼──────┘
+             ▼
+       Detected Shape
 ```
 
-The application can identify elements such as:
-
-* Circles
-* Ellipses
-* Rectangles
-* Diamonds
-* Triangles
-* Stars
-* Polygons
-* Nodes
-* Arrows
-* Connections
-* Labels
-* Text blocks
-* Database-style cylinders
-* Mixed diagrams
+This allows a user to draw naturally while the application interprets the geometry.
 
 ---
 
-# ✨ AI Cleanup
+# 🔵 Circle Recognition
 
-Recognition is only the beginning.
+FinDrawAI can recognize freehand circles and reproduce them accurately.
 
-After FinDrawAI understands your drawing, you can use:
+### Workflow
 
-### `✨ Apply AI Cleanup`
+```text
+✏️ Freehand Circle
+        ↓
+🔍 Analyze Stroke
+        ↓
+⭕ Detect Circular Geometry
+        ↓
+✨ Accurate Circle
+```
 
-to render a cleaner representation of the recognized diagram.
+This is particularly useful when users need quick geometric diagrams without manually constructing perfect circles.
 
-This makes rough ideas easier to understand and present.
+---
+
+# ▭ Rectangle Recognition
+
+Users can sketch a rough rectangle and allow FinDrawAI to identify the intended geometry.
+
+```text
+Rough Rectangle
+      ↓
+Stroke Analysis
+      ↓
+Corner Detection
+      ↓
+Rectangle Classification
+      ↓
+Accurate Rectangle
+```
+
+---
+
+# ⬡ Heptagon Recognition
+
+FinDrawAI also demonstrates polygon recognition through **heptagon detection**.
+
+A rough polygon can be analyzed and converted into a cleaner geometric representation.
+
+```text
+       Rough Heptagon
+             ↓
+      Geometry Analysis
+             ↓
+       Vertex Detection
+             ↓
+      Polygon Recognition
+             ↓
+        ⬡ Heptagon
+```
 
 ---
 
 # 🖼️ Screenshots
 
-## Main Application
+## 🖥️ Main Dashboard
 
-> Screenshots below are loaded directly from the repository's `Screenshots` directory.
+The central workspace where users interact with FinDrawAI and create their drawings.
 
 <div align="center">
 
-<img src="./Screenshots/1.png" width="48%" alt="FinDrawAI Main Interface">
-<img src="./Screenshots/2.png" width="48%" alt="FinDrawAI Whiteboard">
-
-</div>
+<img src="./Screenshots/Main%20Dashboard.png" width="90%" alt="FinDrawAI Main Dashboard"/>
 
 <br>
 
-## ✏️ Drawing & Diagram Creation
+### Main Dashboard
 
-<div align="center">
-
-<img src="./Screenshots/3.png" width="48%" alt="Drawing Tools">
-<img src="./Screenshots/4.png" width="48%" alt="Diagram Creation">
+*The primary FinDrawAI drawing workspace.*
 
 </div>
-
-<br>
-
-## 🤖 AI Recognition
-
-<div align="center">
-
-<img src="./Screenshots/5.png" width="48%" alt="AI Recognition">
-<img src="./Screenshots/6.png" width="48%" alt="AI Analysis">
-
-</div>
-
-<br>
-
-## ✨ AI Cleanup
-
-<div align="center">
-
-<img src="./Screenshots/7.png" width="48%" alt="AI Cleanup">
-<img src="./Screenshots/8.png" width="48%" alt="Clean Diagram">
-
-</div>
-
-<br>
-
-## 📤 Export & Project Management
-
-<div align="center">
-
-<img src="./Screenshots/9.png" width="48%" alt="Export">
-<img src="./Screenshots/10.png" width="48%" alt="Project Management">
-
-</div>
-
-> **Note:** Replace the numbered filenames above with the exact filenames in your `Screenshots` folder if they differ.
 
 ---
 
-# 🛠️ Technology Stack
+## 🎨 Custom Drawings
 
-| Technology               | Purpose                          |
-| ------------------------ | -------------------------------- |
-| 🐍 Python                | Core application                 |
-| 🖼️ Tkinter              | Desktop graphical interface      |
-| 🤖 Local Geometry Engine | Offline recognition              |
-| ☁️ Claude API            | Optional cloud recognition       |
-| 📦 JSON                  | Structured AI results & projects |
-| 🖼️ PNG                  | Diagram export                   |
-| 🔐 `.env`                | API configuration                |
+FinDrawAI supports custom freehand drawings, allowing users to experiment beyond predefined geometric shapes.
+
+<div align="center">
+
+<img src="./Screenshots/Custom%20Drawings.png" width="85%" alt="FinDrawAI Custom Drawings"/>
+
+<br>
+
+### Custom Drawings
+
+*Freehand drawing and custom visual creation.*
+
+</div>
 
 ---
 
-# 🏗️ Project Architecture
+# ⬡ Heptagon Recognition
+
+## ✏️ Freehand Heptagon
+
+A rough heptagon can be drawn freely on the canvas.
+
+<div align="center">
+
+<img src="./Screenshots/Freedraw%20Aptagon.png" width="75%" alt="FinDrawAI Freehand Heptagon"/>
+
+<br>
+
+### Freehand Heptagon
+
+*Rough polygon drawn naturally by the user.*
+
+</div>
+
+---
+
+## 🧠 Detected Heptagon
+
+FinDrawAI analyzes the drawing and detects the intended heptagonal geometry.
+
+<div align="center">
+
+<img src="./Screenshots/Detect%20and%20Draw%20Aptagon%20Shape.png" width="75%" alt="FinDrawAI Detected Heptagon"/>
+
+<br>
+
+### Detected & Drawn Heptagon
+
+*Shape recognition converts the rough drawing into a detected geometric form.*
+
+</div>
+
+---
+
+# 🔵 Circle Recognition
+
+## ✏️ Freestyle Circle
+
+Users can draw circles naturally without worrying about perfect geometry.
+
+<div align="center">
+
+<img src="./Screenshots/Freestyle%20Circle.png" width="75%" alt="FinDrawAI Freestyle Circle"/>
+
+<br>
+
+### Freestyle Circle
+
+*Freehand circular drawing.*
+
+</div>
+
+---
+
+## 🎯 Accurate Circle Detection
+
+FinDrawAI analyzes the freestyle circle and produces a more accurate circular representation.
+
+<div align="center">
+
+<img src="./Screenshots/Detect%20and%20Draw%20Circle%20Accurately.png" width="75%" alt="FinDrawAI Accurate Circle Detection"/>
+
+<br>
+
+### Detect & Draw Circle Accurately
+
+*Recognized circular geometry rendered accurately.*
+
+</div>
+
+---
+
+# ▭ Rectangle Recognition
+
+## ✏️ Freehand Rectangle
+
+Draw a rectangle naturally using the canvas.
+
+<div align="center">
+
+<img src="./Screenshots/Freedraw%20Rectangle.png" width="75%" alt="FinDrawAI Freehand Rectangle"/>
+
+<br>
+
+### Freehand Rectangle
+
+*Rough rectangle drawn by hand.*
+
+</div>
+
+---
+
+## 🎯 Accurate Rectangle Detection
+
+The application analyzes the stroke and reconstructs the intended rectangle.
+
+<div align="center">
+
+<img src="./Screenshots/Detect%20and%20Draw%20Rectangle%20Accurately.png" width="75%" alt="FinDrawAI Accurate Rectangle Detection"/>
+
+<br>
+
+### Detect & Draw Rectangle Accurately
+
+*Recognized rectangle rendered with cleaner geometry.*
+
+</div>
+
+---
+
+# ⚙️ How FinDrawAI Works
+
+The application follows a simple but powerful pipeline:
+
+```text
+             👤 USER
+                │
+                ▼
+        ✏️ Draw on Canvas
+                │
+                ▼
+        📍 Capture Stroke
+                │
+                ▼
+       🔍 Analyze Geometry
+                │
+        ┌───────┴────────┐
+        │                │
+        ▼                ▼
+   Freehand Data     Shape Analysis
+        │                │
+        └───────┬────────┘
+                ▼
+        🧠 Recognition
+                │
+                ▼
+       🎯 Identify Shape
+                │
+                ▼
+        ✨ Clean Rendering
+                │
+                ▼
+          📐 Final Shape
+```
+
+---
+
+# 🏗️ Architecture
 
 ```text
 FinDraw-AI/
 │
-├── 📁 Screenshots/
-│   └── Application screenshots
+├── 📄 main.py
 │
-├── 🐍 main.py
-│   ├── DrawingManager
-│   ├── WhiteboardCanvas
-│   ├── ExportManager
-│   ├── AIAnalysisPanel
-│   └── FinDrawApp
+├── 🧠 ai_engine.py
 │
-├── 🤖 ai_engine.py
-│   └── AIEngine
-│       ├── Prompt handling
-│       ├── Claude API request
-│       ├── Response parsing
-│       └── Validation
-│
-├── 🧠 local_engine.py
-│   └── LocalEngine
-│       ├── Geometry analysis
-│       ├── Shape classification
-│       ├── Text association
-│       └── Connection detection
+├── ⚙️ local_engine.py
 │
 ├── 📦 requirements.txt
+│
+├── 📁 Screenshots/
+│   ├── Main Dashboard.png
+│   ├── Custom Drawings.png
+│   ├── Freedraw Aptagon.png
+│   ├── Detect and Draw Aptagon Shape.png
+│   ├── Freestyle Circle.png
+│   ├── Detect and Draw Circle Accurately.png
+│   ├── Freedraw Rectangle.png
+│   └── Detect and Draw Rectangle Accurately.png
+│
 ├── 📜 LICENSE
+│
 └── 📖 README.md
 ```
 
 ---
 
+# 🛠️ Technology Stack
+
+<div align="center">
+
+| Technology                    | Role                        |
+| :---------------------------- | :-------------------------- |
+| 🐍 **Python**                 | Application logic           |
+| 🖼️ **Tkinter**               | Desktop graphical interface |
+| 🧠 **Shape Recognition**      | Geometric interpretation    |
+| 📐 **Geometry Processing**    | Shape analysis              |
+| 📦 **JSON / Data Structures** | Internal representation     |
+
+</div>
+
+---
+
 # ⚡ Installation
 
-## 1. Clone the Repository
+## 1️⃣ Clone the Repository
 
 ```bash
 git clone https://github.com/MUdevelops/FinDraw-AI.git
@@ -332,7 +450,7 @@ cd FinDraw-AI
 
 ---
 
-## 2. Create a Virtual Environment
+## 2️⃣ Create a Virtual Environment
 
 ### Windows
 
@@ -344,7 +462,7 @@ python -m venv venv
 venv\Scripts\activate
 ```
 
-### macOS / Linux
+### Linux / macOS
 
 ```bash
 python3 -m venv venv
@@ -356,7 +474,7 @@ source venv/bin/activate
 
 ---
 
-## 3. Install Dependencies
+## 3️⃣ Install Dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -364,370 +482,162 @@ pip install -r requirements.txt
 
 ---
 
-# ▶️ Run FinDrawAI
+# ▶️ Run the Application
 
-Start the application with:
-
-```bash
-python main.py
-```
-
-The application starts in:
-
-### 🆓 Free Local Mode
-
-No API key or additional configuration is required.
-
-Simply:
-
-```text
-Launch
-  ↓
-Draw
-  ↓
-Recognize
-  ↓
-Analyze
-  ↓
-Apply Cleanup
-  ↓
-Export
-```
-
----
-
-# ☁️ Optional Cloud Mode
-
-If you want to use Claude for more advanced recognition:
-
-### 1. Create an environment file
-
-Copy:
-
-```text
-.env.example
-```
-
-to:
-
-```text
-.env
-```
-
-### 2. Add your Anthropic API key
-
-```env
-ANTHROPIC_API_KEY=sk-ant-your-key
-```
-
-### 3. Launch FinDrawAI
+Launch FinDrawAI using:
 
 ```bash
 python main.py
 ```
 
-### 4. Select
+Once launched:
 
 ```text
-☁ Cloud
+        🚀 Start Application
+                ↓
+        🖥️ Open Dashboard
+                ↓
+        ✏️ Draw Something
+                ↓
+        🔍 Detect Shape
+                ↓
+        ✨ Generate Accurate Shape
 ```
-
-from the application header.
-
-> **Security:** Never commit your `.env` file or expose your API key publicly.
 
 ---
 
-# 🎮 How to Use
+# 🎮 Usage
 
-### Step 1 — Select a Tool
+### Step 1 — Open FinDrawAI
 
-Choose a drawing tool from the left toolbar.
+Launch the application.
 
 ### Step 2 — Draw
 
-Create your rough diagram on the whiteboard.
+Use the canvas to create a freehand shape.
 
-### Step 3 — Recognize
+### Step 3 — Analyze
 
-Click:
+Allow FinDrawAI to inspect the drawing.
+
+### Step 4 — Detect
+
+The application determines the most likely geometric shape.
+
+### Step 5 — Render
+
+FinDrawAI produces the recognized/clean representation.
+
+---
+
+# 💡 Example
+
+Suppose you draw this rough shape:
 
 ```text
-✨ Recognize
+       ╭──────────╮
+      /            \
+     │              │
+      \            /
+       ╰──────────╯
 ```
 
-### Step 4 — Analyze
+FinDrawAI analyzes the geometry and determines the intended structure.
 
-Review the results in the AI Analysis panel.
-
-### Step 5 — Clean
-
-Click:
+The goal is:
 
 ```text
-✨ Apply AI Cleanup
+       ROUGH
+         │
+         ▼
+    🔍 ANALYSIS
+         │
+         ▼
+      🧠 DETECT
+         │
+         ▼
+      ✨ CLEAN
 ```
 
-### Step 6 — Export
-
-Export your work as:
-
-* 🖼️ PNG
-* 📄 AI Diagram JSON
-* 💾 Full FinDraw project
-
 ---
 
-# ⌨️ Keyboard Shortcuts
+# 🎯 Design Philosophy
 
-| Shortcut           | Action                |
-| ------------------ | --------------------- |
-| `V`                | Select / Move         |
-| `P`                | Pen                   |
-| `E`                | Eraser                |
-| `R`                | Rectangle             |
-| `C`                | Circle                |
-| `Y`                | Triangle              |
-| `D`                | Diamond               |
-| `L`                | Line                  |
-| `A`                | Arrow                 |
-| `K`                | Star                  |
-| `T`                | Text                  |
-| `F`                | Toggle Fill           |
-| `G`                | Toggle Grid           |
-| `+` / `-`          | Zoom                  |
-| `0`                | Reset Zoom            |
-| `Delete`           | Delete Selected Shape |
-| `Ctrl + Z`         | Undo                  |
-| `Ctrl + Y`         | Redo                  |
-| `Ctrl + S`         | Export PNG            |
-| `Ctrl + Shift + S` | Save Project          |
-| `Ctrl + O`         | Open Project          |
+FinDrawAI follows a simple principle:
 
----
+> ### **Don't make the user draw perfectly. Make the software understand imperfect drawings.**
 
-# 📦 Export & Persistence
+The project focuses on making geometric drawing more natural and accessible.
 
-FinDrawAI supports multiple ways to preserve your work.
-
-### 🖼️ PNG Export
-
-Export your final diagram as an image.
-
-### 📄 AI Diagram JSON
-
-Export structured recognition data for further processing.
-
-### 💾 Project Files
-
-Save the complete project and reopen it later for continued editing.
-
----
-
-# 🧪 Local Recognition Technology
-
-The local engine uses explainable geometric analysis.
-
-For freehand drawings, the process roughly follows:
+Instead of:
 
 ```text
-Freehand Stroke
-      │
-      ▼
-Path Simplification
-      │
-      ▼
-Corner Detection
-      │
-      ▼
-Closed / Open Analysis
-      │
-      ▼
-Roundness Analysis
-      │
-      ▼
-Shape Classification
-      │
-      ▼
-Text & Connection Association
+Perfect Input
+     ↓
+Perfect Output
 ```
 
-The approach uses geometric heuristics rather than a trained neural network.
-
-This provides a major advantage:
-
-### ⚡ No Model Download Required
-
-The application can perform basic recognition immediately after installation.
-
----
-
-# 🔐 Privacy
-
-FinDrawAI provides an important privacy advantage through its local engine.
-
-### Local Mode
-
-Your drawings can remain:
+FinDrawAI aims for:
 
 ```text
-Your Computer
-      ↓
-Local Recognition
-      ↓
-Local Result
+Natural Input
+     ↓
+Intelligent Interpretation
+     ↓
+Clean Output
 ```
 
-No cloud API is required.
-
-### Cloud Mode
-
-When using Claude:
-
-```text
-Your Drawing
-      ↓
-Canvas Capture
-      ↓
-Claude API
-      ↓
-Recognition Result
-```
-
-Use Cloud mode only when you are comfortable sending the relevant canvas image to the configured cloud service.
-
 ---
 
-# ⚠️ Current Limitations
+# 🚀 Future Roadmap
 
-FinDrawAI is actively evolving.
+Potential future improvements include:
 
-Current limitations include:
-
-* Local recognition is geometry-based.
-* Extremely messy sketches may be difficult to classify.
-* Cloud mode requires internet access.
-* Cloud mode requires your own Anthropic API key.
-* Canvas capture may require adjustment in some virtual/remote desktop environments.
-* Recognition is currently triggered manually rather than continuously.
-
----
-
-# 🗺️ Roadmap
-
-Future improvements can include:
-
-* [ ] 🔄 Real-time collaborative whiteboards
-* [ ] 🌐 WebSocket collaboration
-* [ ] ⚡ Automatic recognition
-* [ ] 🧩 Layer management
-* [ ] 🖼️ SVG export
-* [ ] 📚 Diagram template library
-* [ ] 📊 UML templates
-* [ ] 🗄️ ERD templates
-* [ ] 🔀 Advanced flowchart templates
-* [ ] 🤖 Improved AI recognition
-* [ ] 🎨 More customization options
-* [ ] 📱 Cross-platform UI improvements
-
----
-
-# 💡 Use Cases
-
-FinDrawAI can be useful for:
-
-### 👨‍💻 Software Developers
-
-Create:
-
-* System architecture
-* Flowcharts
-* Database diagrams
-* Application workflows
-* API concepts
-
-### 🎓 Students
-
-Create:
-
-* Class diagrams
-* Algorithms
-* Flowcharts
-* Project structures
-* Study diagrams
-
-### 🎨 Designers
-
-Quickly sketch:
-
-* Wireframes
-* UI concepts
-* User flows
-* Product ideas
-
-### 🧠 Creators & Researchers
-
-Turn rough ideas into structured visual concepts.
-
----
-
-# 🌟 What Makes FinDrawAI Different?
-
-| Capability          | FinDrawAI  |
-| ------------------- | ---------- |
-| Free drawing        | ✅          |
-| Shape tools         | ✅          |
-| Offline recognition | ✅          |
-| No API key required | ✅          |
-| AI recognition      | ✅          |
-| Claude integration  | ✅ Optional |
-| AI cleanup          | ✅          |
-| PNG export          | ✅          |
-| JSON export         | ✅          |
-| Project save/open   | ✅          |
-| Undo / Redo         | ✅          |
-| Zoom                | ✅          |
-| Grid                | ✅          |
+* [ ] 🤖 Advanced AI-powered recognition
+* [ ] 🔺 More geometric shapes
+* [ ] 🧩 Multi-shape diagrams
+* [ ] 🔗 Automatic connection detection
+* [ ] 📝 Text recognition
+* [ ] 📐 Smart alignment
+* [ ] 🎨 Advanced styling
+* [ ] 📤 SVG export
+* [ ] 📄 PDF export
+* [ ] 💾 Project persistence
+* [ ] ↩️ Advanced undo/redo
+* [ ] 🖥️ Improved desktop UI
+* [ ] 🌐 Web version
+* [ ] 📱 Cross-platform support
 
 ---
 
 # 🤝 Contributing
 
-Contributions are welcome.
+Contributions, ideas, and improvements are welcome.
 
 ```bash
-# Fork the project
+# Fork the repository
 
 # Create a feature branch
-git checkout -b feature/amazing-feature
+git checkout -b feature/new-feature
 
-# Commit your changes
-git commit -m "Add amazing feature"
+# Make your changes
 
-# Push the branch
-git push origin feature/amazing-feature
+# Commit
+git commit -m "Add new feature"
+
+# Push
+git push origin feature/new-feature
 ```
 
 Then open a Pull Request.
-
-Ideas for contributions include:
-
-* New recognition algorithms
-* Additional drawing tools
-* Better shape detection
-* UI improvements
-* Export formats
-* Templates
-* Performance improvements
-* Cross-platform improvements
 
 ---
 
 # 📄 License
 
-FinDrawAI is released under the **MIT License**.
+This project is released under the **MIT License**.
 
-See [`LICENSE`](LICENSE) for details.
+See the [`LICENSE`](LICENSE) file for more information.
 
 ---
 
@@ -735,17 +645,23 @@ See [`LICENSE`](LICENSE) for details.
 
 <div align="center">
 
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&duration=2500&pause=1000&color=7C3AED&center=true&vCenter=true&width=600&lines=Built+by+Muhammad+Umar+Jamal;Software+Developer;AI+%26+Automation+Enthusiast;Building+Real+Working+Software" />
+
+<br><br>
+
 ### Muhammad Umar Jamal
 
-**Software Developer • AI Enthusiast • Full-Stack Developer**
-
-Building practical software, AI-powered tools, and developer-focused projects.
+**Software Developer • AI Enthusiast • Builder**
 
 <br>
 
-[![GitHub](https://img.shields.io/badge/GitHub-MUdevelops-181717?style=for-the-badge\&logo=github)](https://github.com/MUdevelops)
+<a href="https://github.com/MUdevelops">
+<img src="https://img.shields.io/badge/GitHub-MUdevelops-181717?style=for-the-badge&logo=github"/>
+</a>
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-m--umar--jamal.netlify.app-00C7B7?style=for-the-badge\&logo=netlify\&logoColor=white)](https://m-umar-jamal.netlify.app/)
+<a href="https://m-umar-jamal.netlify.app/">
+<img src="https://img.shields.io/badge/Portfolio-Visit-00C7B7?style=for-the-badge&logo=netlify&logoColor=white"/>
+</a>
 
 </div>
 
@@ -753,14 +669,14 @@ Building practical software, AI-powered tools, and developer-focused projects.
 
 <div align="center">
 
-## ⭐ If FinDrawAI helped you, consider giving the repository a star!
-
-### 🎨 Draw → 🤖 Recognize → ✨ Clean → 📤 Export
-
-**FinDrawAI — Turn rough ideas into intelligent diagrams.**
+### ⭐ If you like FinDrawAI, consider giving the repository a star!
 
 <br>
 
-Made with ❤️ and Python
+**✏️ Draw → 🔍 Detect → 🧠 Understand → ✨ Refine**
+
+<br>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20,24,30&height=120&section=footer&animation=fadeIn" width="100%"/>
 
 </div>
