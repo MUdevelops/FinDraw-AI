@@ -1,6 +1,12 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20,24,30&height=180&section=header&text=FinDrawAI&fontSize=55&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=AI-Powered%20Intelligent%20Drawing%20%26%20Shape%20Recognition&descAlignY=58&descSize=18" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&height=200&section=header&text=FinDrawAI&fontSize=60&fontColor=FFFFFF&animation=fadeIn&gradientColor=6,11,20,24,30" width="100%"/>
+
+<br>
+
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=2800&pause=900&color=8B5CF6&center=true&vCenter=true&width=750&lines=AI-Powered+Intelligent+Drawing;Smart+Shape+Recognition;Draw+%E2%86%92+Detect+%E2%86%92+Refine;Built+with+Python+%26+Tkinter" alt="Typing Animation"/>
+
+</div>
 
 <br>
 
